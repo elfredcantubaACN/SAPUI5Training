@@ -1,24 +1,41 @@
-<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="com.acn.training.project1.controller.View1">
-    <Page id="page" title="{i18n>title}">
-    <content>
-        <Label width="100%" id="label0" text="First Name"/>
-    </content>
-    <footer>
-        <Toolbar width="100%" id="toolbar1">
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="com.acn.training.project1.controller.View1"><Page id="page" title="Exercise 1">
+    <subHeader><Toolbar width="100%" id="toolbar2">
             <content>
-                <ToolbarSpacer id="spacer0"/>
-                <Button xmlns="sap.m" text="Save" id="button0" type="Accept" icon="sap-icon://save"/>
-            </content>
-        </Toolbar>
-    </footer>
-    <subHeader>
-        <Toolbar width="100%" id="toolbar2">
-            <content>
-                <Title xmlns="sap.m" text="SUB HEADER TITLE" id="title0"/>
-                <ToolbarSpacer id="spacer1"/>
-                <Button xmlns="sap.m" text="Button" id="button1"/>
+                <ToolbarSpacer id="spacer4"/><Title xmlns="sap.m" text="Address" id="title0" textAlign="Begin"/>
+                <ToolbarSpacer id="spacer0_1747719885807"/>
             </content>
         </Toolbar>
     </subHeader>
+    <content>
+        <sap.ui.core:InvisibleText xmlns:sap.ui.core="sap.ui.core" text="InvisibleText" id="text4"/>
+        <ToolbarSeparator id="separator0"/>
+        <Text xmlns="sap.m" text="Name:" id="text_name" width="10%"/>
+        <Input xmlns="sap.m" id="input_name" width="85%"/>
+        <Text xmlns="sap.m" text="Street/No:" id="text_street" width="10%"/>
+        <Input xmlns="sap.m" id="input_street" width="51%"/>
+        <Input xmlns="sap.m" id="text_no" width="34%"/>
+        <Text xmlns="sap.m" text="ZIP Code/City" id="text_zip_city" width="10%"/>
+        <Input xmlns="sap.m" id="text_zip_code" width="34%"/>
+        <Input xmlns="sap.m" id="text_city" width="51%"/>
+        <Text xmlns="sap.m" text="Country:" id="text_country" width="10%"/>
+        <Select xmlns="sap.m" id="select_country" width="85%" selectedKey="England">
+            <items>
+                <core:Item xmlns:core="sap.ui.core" key="item-key-1" text="England" id="item0"/>
+                <core:Item xmlns:core="sap.ui.core" key="item-key-2" text="Germany" id="item1"/>
+                <core:Item xmlns:core="sap.ui.core" key="item-key-2" text="USA" id="item2"/>
+                <core:Item xmlns:core="sap.ui.core" key="item-key-2" text="Philippines" id="item3"/>
+                </items>
+            
+        </Select>
+        <Toolbar width="100%" id="toolbar1" design="Transparent">
+            <content>
+                <ToolbarSpacer id="spacer0"/>
+                <Button xmlns="sap.m" text="Save" id="button_save"/>
+                <Button xmlns="sap.m" text="Clear" id="button_clear"/>
+            </content>
+        </Toolbar>
+        <sap.ui.core:InvisibleText xmlns:sap.ui.core="sap.ui.core" text="InvisibleText" id="text7"/>
+        <sap.ui.core:InvisibleText xmlns:sap.ui.core="sap.ui.core" text="InvisibleText" id="text5"/>
+    </content>
     </Page>
 </mvc:View>
